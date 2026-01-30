@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Repair Johnson County | When Your Appliances Stop Working</title>
+    <meta name="description" content="Refrigerator died? Washer won't spin? Dishwasher leaking? Fast appliance repair in Johnson County. Same-day service available for most repairs.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .hero {
+            background: linear-gradient(rgba(185, 28, 28, 0.9), rgba(185, 28, 28, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23dc2626" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+        .cta-soft {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .problem-section {
+            background: #fef2f2;
+            padding: 3rem 2rem;
+            margin: -3rem -2rem 3rem -2rem;
+        }
+        .problem-section h2 {
+            text-align: center;
+            color: #b91c1c;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .problem-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #dc2626;
+        }
+        .problem-card h3 {
+            color: #b91c1c;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .problem-card .issue {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+        .problem-card .fix {
+            color: #059669;
+            font-weight: 600;
+        }
+        .solution-section {
+            max-width: 900px;
+            margin: 3rem auto;
+            text-align: center;
+        }
+        .solution-section h2 {
+            color: #b91c1c;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .solution-section p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .seasonal-note {
+            background: #fef3c7;
+            border-left: 4px solid #fbbf24;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+        .seasonal-note h3 {
+            color: #92400e;
+            margin-bottom: 0.75rem;
+        }
+        .seasonal-note p {
+            color: #78350f;
+            line-height: 1.7;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #b91c1c;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #dc2626;
+        }
+        .service-card h3 {
+            color: #b91c1c;
+            margin-bottom: 0.75rem;
+            font-size: 1.15rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #b91c1c;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.05rem;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #dc2626;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Appliance Repair Johnson County</div>
+            <div class="phone">📞 (913) 730-6638</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>When Your Appliances Stop Working</h1>
+            <p>Refrigerator died overnight? Washer won't spin? Dishwasher leaking all over the floor? We know how disruptive appliance breakdowns are—and we're here to help get things running again fast.</p>
+            <p class="cta-soft">Same-day service available for most repairs</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="problem-section">
+            <h2>Common Appliance Problems We Fix</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>🥶 Refrigerator Issues</h3>
+                    <p class="issue">"Food is spoiling because the fridge isn't staying cold"</p>
+                    <p class="fix">→ Compressor repair, thermostat replacement, seal fixes</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>👕 Washer Problems</h3>
+                    <p class="issue">"Clothes are still soaking wet after the cycle"</p>
+                    <p class="fix">→ Drum repair, pump replacement, drainage fixes</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>🔥 Dryer Failures</h3>
+                    <p class="issue">"Dryer runs but clothes stay damp for hours"</p>
+                    <p class="fix">→ Heating element, vent cleaning, thermostat repair</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>💦 Dishwasher Leaks</h3>
+                    <p class="issue">"Water puddles on the floor after every cycle"</p>
+                    <p class="fix">→ Door seal replacement, pump repair, hose fixes</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>🍳 Oven Not Heating</h3>
+                    <p class="issue">"Oven won't get hot enough or takes forever to preheat"</p>
+                    <p class="fix">→ Element replacement, igniter repair, control board fixes</p>
+                </div>
+
+                <div class="problem-card">
+                    <h3>❄️ Freezer Problems</h3>
+                    <p class="issue">"Ice cream is melting and everything's thawing"</p>
+                    <p class="fix">→ Defrost timer, temperature control, seal replacement</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution-section">
+            <h2>How We Help</h2>
+            <p>Appliance breakdowns are never convenient. We get that. That's why we focus on quick diagnosis and efficient repairs—getting your appliance back to working so you can get back to normal life.</p>
+            <p>Most repairs are completed in a single visit. We stock common parts on our trucks and can usually fix the problem the same day you call. For less common issues, we'll diagnose it on-site and order the part, then return to complete the repair as soon as it arrives.</p>
+            <p class="cta-soft">Call us when something breaks—we'll walk you through what's happening and when we can get there.</p>
+
+            <div class="seasonal-note">
+                <h3>🌡️ Seasonal Patterns</h3>
+                <p><strong>Summer:</strong> We see a lot of refrigerator and AC-related calls when temperatures spike—units working overtime can fail. <strong>Winter:</strong> Dryer vents get clogged with lint faster when people are doing more laundry with heavier items. <strong>Holidays:</strong> Ovens and dishwashers tend to break right before big gatherings when they're used more than usual.</p>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Appliances We Repair</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Refrigerators</h3>
+                    <p>Not cooling, ice maker issues, water dispenser problems, loud noises, door seal failures.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Washers</h3>
+                    <p>Won't spin, leaking, won't drain, making noise, door won't lock, won't start.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Dryers</h3>
+                    <p>Not heating, taking too long, won't start, making noise, won't tumble.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Dishwashers</h3>
+                    <p>Not draining, leaking, not cleaning dishes, won't fill with water, control panel issues.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ovens & Ranges</h3>
+                    <p>Not heating, temperature incorrect, burners not working, self-clean issues, control problems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Microwaves</h3>
+                    <p>Not heating, sparking, turntable issues, door problems, control panel failures.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Garbage Disposals</h3>
+                    <p>Jammed, leaking, won't turn on, making grinding noises, reset button trips.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ice Makers</h3>
+                    <p>Not making ice, leaking, ice tastes bad, making noise, not dispensing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Get Your Appliance Fixed</h2>
+            <p class="subtitle">Tell us what's broken and we'll help get it working again</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="JCO-APPLIANCE-001">
+                <input type="hidden" name="market" value="Johnson County">
+                <input type="hidden" name="industry" value="Appliance Repair">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="appliancefixjoco.com">
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Service Address *</label>
+                    <input type="text" id="address" name="address" required placeholder="Street address">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appliance_type">What Type of Appliance? *</label>
+                    <select id="appliance_type" name="appliance_type" required>
+                        <option value="">Select appliance...</option>
+                        <option value="Refrigerator">Refrigerator</option>
+                        <option value="Washer">Washer</option>
+                        <option value="Dryer">Dryer</option>
+                        <option value="Dishwasher">Dishwasher</option>
+                        <option value="Oven/Range">Oven/Range</option>
+                        <option value="Microwave">Microwave</option>
+                        <option value="Garbage Disposal">Garbage Disposal</option>
+                        <option value="Ice Maker">Ice Maker</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="brand">Brand (if known)</label>
+                    <input type="text" id="brand" name="brand" placeholder="e.g., Whirlpool, Samsung, LG">
+                </div>
+
+                <div class="form-group">
+                    <label for="urgency">How Soon Do You Need Service? *</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">Select urgency...</option>
+                        <option value="Emergency - Today if Possible">Emergency - Today if Possible</option>
+                        <option value="Tomorrow">Tomorrow</option>
+                        <option value="This Week">This Week</option>
+                        <option value="Not Urgent">Not Urgent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">What's the Problem? *</label>
+                    <textarea id="details" name="details" required placeholder="Describe what's happening with your appliance..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Service →</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Appliance Repair Johnson County. Fast, Reliable Appliance Repairs.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Serving Overland Park, Olathe, Lenexa, Shawnee, Leawood & All of Johnson County, KS</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
